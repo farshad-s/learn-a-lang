@@ -1,11 +1,12 @@
 <h1 class="title">Pick a Language</h1>
 <div class="card-container">
-  <div *ngFor="let languageCard of languageCards">
+  <div *ngFor="let languageCard of languageCards; let i = index">
     <div>
       <mat-card>
         <mat-card-title>{{ languageCard.language }}</mat-card-title>
         <mat-card-content>{{ languageCard.greeting }}</mat-card-content>
         <button
+          (click)="selectClicked(i)"
           [ngStyle]="{
             'background-color':
               languageCard.available === true
