@@ -27,6 +27,10 @@ export class LanguageCardComponent implements OnInit {
     },
   ];
 
+  selectClicked(i): void {
+    console.log(this.languageCards[i].language);
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
