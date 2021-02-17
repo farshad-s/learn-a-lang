@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ILanguage } from './language';
 
 @Component({
   selector: 'app-language-card',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./language-card.component.css'],
 })
 export class LanguageCardComponent implements OnInit {
-  languageCards: any[] = [
+  languageCards: ILanguage[] = [
     {
       language: 'Urdu',
       greeting: 'ہیلو دنیا',
