@@ -1,20 +1,21 @@
-<div>
-  <h1 class="title">Pick a Language</h1>
-  <div class="card-container">
-    <mat-card>
-      <mat-card-title>Urdu</mat-card-title>
-      <mat-card-content>ہیلو دنیا</mat-card-content>
-      <button class="available">Click here to get started!</button>
-    </mat-card>
-    <mat-card>
-      <mat-card-title>French</mat-card-title>
-      <mat-card-content>Bonjour le monde</mat-card-content>
-      <button class="not-available">Currently not available</button>
-    </mat-card>
-    <mat-card>
-      <mat-card-title>Spanish</mat-card-title>
-      <mat-card-content>Hola Mundo</mat-card-content>
-      <button class="not-available">Currently not available</button>
-    </mat-card>
+<h1 class="title">Pick a Language</h1>
+<div class="card-container">
+  <div *ngFor="let languageCard of languageCards">
+    <div>
+      <mat-card>
+        <mat-card-title>{{ languageCard.language }}</mat-card-title>
+        <mat-card-content>{{ languageCard.greeting }}</mat-card-content>
+        <button
+          [ngStyle]="{
+            'background-color':
+              languageCard.available === true
+                ? 'rgb(65, 156, 65)'
+                : 'rgb(192, 66, 66)'
+          }"
+        >
+          {{ languageCard.button }}
+        </button>
+      </mat-card>
+    </div>
   </div>
 </div>
