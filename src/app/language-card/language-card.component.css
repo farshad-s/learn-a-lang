@@ -17,14 +17,6 @@ button {
 }
 
 button:hover {
-  background-color: transparent;
-  transition: ease 0.4s;
-}
-
-.available {
-  background-color: rgb(65, 156, 65);
-}
-
-.not-available {
-  background-color: rgb(192, 66, 66);
+  background-color: transparent !important;
+  transition: ease 0.5s;
 }
