@@ -1,0 +1,15 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+mat-card {
+  margin-bottom: 100px;
+}
