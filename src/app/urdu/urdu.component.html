@@ -1,62 +1,11 @@
 <h1 class="title">Pick a Card</h1>
 <div class="card-container">
   <div class="row">
-    <div>
+    <div *ngFor="let category of categories; let i = index">
       <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
-      </mat-card>
-    </div>
-    <div>
-      <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
-      </mat-card>
-    </div>
-    <div>
-      <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
-      </mat-card>
-    </div>
-    <div>
-      <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
-      </mat-card>
-    </div>
-  </div>
-  <div class="row">
-    <div>
-      <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
-      </mat-card>
-    </div>
-    <div>
-      <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
-      </mat-card>
-    </div>
-    <div>
-      <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
-      </mat-card>
-    </div>
-    <div>
-      <mat-card>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-content>Content</mat-card-content>
-        <button>Open</button>
+        <mat-card-title>{{ category.category }}</mat-card-title>
+        <mat-card-content>{{ category.description }}</mat-card-content>
+        <button>{{ category.button }}</button>
       </mat-card>
     </div>
   </div>
