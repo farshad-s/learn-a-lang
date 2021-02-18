@@ -6,6 +6,7 @@
         <mat-card-title>{{ languageCard.language }}</mat-card-title>
         <mat-card-content>{{ languageCard.greeting }}</mat-card-content>
         <button
+          routerLink="{{ languageCard.language }}"
           (click)="selectClicked(i)"
           [ngStyle]="{
             'background-color':
