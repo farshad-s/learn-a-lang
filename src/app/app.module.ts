@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LanguageCardComponent } from './language-card/language-card.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { UrduComponent } from './urdu/urdu.component';
+import { ModalComponent } from './shared/modal/modal.component';
 
 const routes: Routes = [
   { path: 'home', component: LanguageCardComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
     NavBarComponent,
     LanguageCardComponent,
     UrduComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
