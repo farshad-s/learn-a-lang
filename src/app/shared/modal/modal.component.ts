@@ -2,6 +2,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IWords } from '../../shared/words';
 import { WORDS } from '../../urdu/urdu-words';
 import { VERBS } from '../../urdu/urdu-verbs';
+import { PHRASES } from '../../urdu/urdu-phrases';
 
 @Component({
   selector: 'app-modal',
@@ -11,6 +12,7 @@ import { VERBS } from '../../urdu/urdu-verbs';
 export class ModalComponent {
   urduWords: IWords[] = WORDS;
   urduVerbs: IWords[] = VERBS;
+  urduPhrases: IWords[] = PHRASES;
 
   @ViewChild('nounModal', { static: false }) nounModal: ElementRef;
   @ViewChild('verbModal', { static: false }) verbModal: ElementRef;
