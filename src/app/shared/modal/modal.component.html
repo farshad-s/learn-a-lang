@@ -19,9 +19,9 @@
 </div>
 
 <div #phraseModal class="container">
-  <div class="content" *ngFor="let urduWord of urduWords">
-    <p class="word">Word: {{ urduWord.word }}</p>
-    <p class="translation">Translation: {{ urduWord.translation }}</p>
+  <div class="content" *ngFor="let urduPhrase of urduPhrases">
+    <p class="word">Phrase: {{ urduPhrase.word }}</p>
+    <p class="translation">Translation: {{ urduPhrase.translation }}</p>
   </div>
   <div class="button-container">
     <button (click)="close()">Close</button>
