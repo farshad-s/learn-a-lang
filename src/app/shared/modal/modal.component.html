@@ -1,7 +1,27 @@
-<div #myModal class="container">
-  <div class="content">
-    <p class="word"></p>
-    <p class="translation"></p>
+<div #nounModal class="container">
+  <div class="content" *ngFor="let urduWord of urduWords">
+    <p class="word">Word: {{ urduWord.word }}</p>
+    <p class="translation">Translation: {{ urduWord.translation }}</p>
+  </div>
+  <div class="button-container">
+    <button (click)="close()">Close</button>
+  </div>
+</div>
+
+<div #verbModal class="container">
+  <div class="content" *ngFor="let urduVerb of urduVerbs">
+    <p class="word">Word: {{ urduVerb.word }}</p>
+    <p class="translation">Translation: {{ urduVerb.translation }}</p>
+  </div>
+  <div class="button-container">
+    <button (click)="close()">Close</button>
+  </div>
+</div>
+
+<div #phraseModal class="container">
+  <div class="content" *ngFor="let urduWord of urduWords">
+    <p class="word">Word: {{ urduWord.word }}</p>
+    <p class="translation">Translation: {{ urduWord.translation }}</p>
   </div>
   <div class="button-container">
     <button (click)="close()">Close</button>
