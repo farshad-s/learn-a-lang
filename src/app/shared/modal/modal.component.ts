@@ -1,4 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { IWords } from '../../shared/words';
+import { WORDS } from '../../urdu/urdu-words';
+import { VERBS } from '../../urdu/urdu-verbs';
 
 @Component({
   selector: 'app-modal',
@@ -6,13 +9,28 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent {
-  @ViewChild('myModal', { static: false }) modal: ElementRef;
+  urduWords: IWords[] = WORDS;
+  urduVerbs: IWords[] = VERBS;
 
-  open() {
-    this.modal.nativeElement.style.display = 'block';
+  @ViewChild('nounModal', { static: false }) nounModal: ElementRef;
+  @ViewChild('verbModal', { static: false }) verbModal: ElementRef;
+  @ViewChild('phraseModal', { static: false }) phraseModal: ElementRef;
+
+  nounOpen() {
+    this.nounModal.nativeElement.style.display = 'block';
+  }
+
+  verbOpen() {
+    this.verbModal.nativeElement.style.display = 'block';
+  }
+
+  phraseOpen() {
+    this.phraseModal.nativeElement.style.display = 'block';
   }
 
   close() {
-    this.modal.nativeElement.style.display = 'none';
+    this.nounModal.nativeElement.style.display = 'none';
+    this.verbModal.nativeElement.style.display = 'none';
+    this.phraseModal.nativeElement.style.display = 'none';
   }
 }
