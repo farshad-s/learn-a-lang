@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ICategories } from './categories';
-import { CATEGORIES } from './categories-list';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ICategories } from '../shared/categories';
+import { CATEGORIES } from '../shared/categories-list';
+import { ModalComponent } from '../shared/modal/modal.component';
 
 @Component({
   selector: 'app-urdu',
@@ -13,4 +14,10 @@ export class UrduComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  @ViewChild('modal', { static: false }) modal: ModalComponent;
+
+  openModal() {
+    this.modal.open();
+  }
 }
