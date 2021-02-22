@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ICategories } from '../shared/categories';
 import { CATEGORIES } from '../shared/categories-list';
-import { ModalComponent } from '../shared/modal/modal.component';
 import { IWords } from '../shared/words';
 import { WORDS } from './urdu-words';
+import { ModalComponent } from '../shared/modal/modal.component';
 
 @Component({
   selector: 'app-urdu',
@@ -18,21 +18,19 @@ export class UrduComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  @ViewChild('modal', { static: false }) modal: ModalComponent;
+  @ViewChild('nounModal', { static: false }) nounModal: ModalComponent;
+  @ViewChild('verbModal', { static: false }) verbModal: ModalComponent;
+  @ViewChild('phraseModal', { static: false }) phraseModal: ModalComponent;
 
-  openModal() {
-    this.modal.open();
-    for (let i = 0; i < this.urduWords.length; i++) {
-      this.modal.modal.nativeElement.firstChild.firstChild.innerText +=
-        ' Word: ' +
-        this.urduWords[i].word +
-        ' Translation: ' +
-        this.urduWords[i].translation;
-    }
-    console.log(this.modal);
-    console.log(this.modal.modal);
-    console.log(this.modal.modal.nativeElement);
-    console.log(this.modal.modal.nativeElement.firstChild.firstChild);
-    console.log(this.modal.modal.nativeElement.firstChild.lastChild);
+  openNounModal() {
+    this.nounModal.nounOpen();
+  }
+
+  openVerbModal() {
+    this.verbModal.verbOpen();
+  }
+
+  openPhraseModal() {
+    this.phraseModal.phraseOpen();
   }
 }
