@@ -1,4 +1,4 @@
-import { ICategories } from '../shared/categories';
+import { ICategories } from './categories';
 
 export const CATEGORIES: ICategories[] = [
   {
