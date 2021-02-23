@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IWords } from '../../shared/words';
-import { WORDS } from '../../urdu/urdu-words';
+import { NOUNS } from '../../urdu/urdu-nouns';
 import { VERBS } from '../../urdu/urdu-verbs';
 import { PHRASES } from '../../urdu/urdu-phrases';
 
@@ -10,7 +10,7 @@ import { PHRASES } from '../../urdu/urdu-phrases';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent {
-  urduWords: IWords[] = WORDS;
+  urduWords: IWords[] = NOUNS;
   urduVerbs: IWords[] = VERBS;
   urduPhrases: IWords[] = PHRASES;
 
