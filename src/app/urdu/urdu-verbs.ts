@@ -7,10 +7,10 @@ export const VERBS: IWords[] = [
   },
   {
     word: 'I went',
-    translation: 'Mein...',
+    translation: 'Mein Chala Gaya',
   },
   {
     word: 'I forgot',
-    translation: 'Mein...',
+    translation: 'Mein Bhool Gaya',
   },
 ];
