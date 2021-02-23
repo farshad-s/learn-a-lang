@@ -10,7 +10,7 @@ import { PHRASES } from '../../urdu/urdu-phrases';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent {
-  urduWords: IWords[] = NOUNS;
+  urduNouns: IWords[] = NOUNS;
   urduVerbs: IWords[] = VERBS;
   urduPhrases: IWords[] = PHRASES;
 
