@@ -1,7 +1,7 @@
 <div #nounModal class="container">
   <div class="content" *ngFor="let urduNoun of urduNouns">
-    <p class="word">Word: {{ urduWord.word }}</p>
-    <p class="translation">Translation: {{ urduWord.translation }}</p>
+    <p class="word">Word: {{ urduNoun.word }}</p>
+    <p class="translation">Translation: {{ urduNoun.translation }}</p>
   </div>
   <div class="button-container">
     <button (click)="close()">Close</button>
