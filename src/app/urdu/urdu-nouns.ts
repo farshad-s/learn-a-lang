@@ -14,27 +14,27 @@ export const NOUNS: IWords[] = [
     translation: 'Tiger',
   },
   {
-    word: 'Kabootar',
-    translation: 'Pigeon',
+    word: 'Billi',
+    translation: 'Cat',
   },
   {
-    word: 'Sher',
-    translation: 'Lion',
+    word: 'Gadha',
+    translation: 'Donkey',
   },
   {
-    word: 'Babar',
-    translation: 'Tiger',
+    word: 'Maindak',
+    translation: 'Frog',
   },
   {
-    word: 'Kabootar',
-    translation: 'Pigeon',
+    word: 'Zarafah',
+    translation: 'Giraffe',
   },
   {
-    word: 'Sher',
-    translation: 'Lion',
+    word: 'Tattu',
+    translation: 'Pony',
   },
   {
-    word: 'Babar',
-    translation: 'Tiger',
+    word: 'Khargosh',
+    translation: 'Rabbit',
   },
 ];
