@@ -9,6 +9,7 @@ import { LanguageCardComponent } from './language-card/language-card.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { UrduComponent } from './urdu/urdu.component';
 import { ModalComponent } from './shared/modal/modal.component';
+import { FrenchComponent } from './french/french.component';
 
 const routes: Routes = [
   { path: 'home', component: LanguageCardComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { path: 'home/Urdu', component: UrduComponent },
+  { path: 'home/French', component: FrenchComponent },
 ];
 
 @NgModule({
@@ -27,6 +29,7 @@ const routes: Routes = [
     LanguageCardComponent,
     UrduComponent,
     ModalComponent,
+    FrenchComponent,
   ],
   imports: [
     BrowserModule,
