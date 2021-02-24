@@ -1,8 +1,9 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IWords } from '../../shared/words';
-import { NOUNS } from '../../urdu/urdu-nouns';
-import { VERBS } from '../../urdu/urdu-verbs';
-import { PHRASES } from '../../urdu/urdu-phrases';
+import { URDUNOUNS } from '../../urdu/urdu-nouns';
+import { URDUVERBS } from '../../urdu/urdu-verbs';
+import { URDUPHRASES } from '../../urdu/urdu-phrases';
+import { FRENCHNOUNS } from '../../french/french-nouns';
 
 @Component({
   selector: 'app-modal',
@@ -10,29 +11,37 @@ import { PHRASES } from '../../urdu/urdu-phrases';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent {
-  urduNouns: IWords[] = NOUNS;
-  urduVerbs: IWords[] = VERBS;
-  urduPhrases: IWords[] = PHRASES;
+  urduNouns: IWords[] = URDUNOUNS;
+  urduVerbs: IWords[] = URDUVERBS;
+  urduPhrases: IWords[] = URDUPHRASES;
 
-  @ViewChild('nounModal', { static: false }) nounModal: ElementRef;
-  @ViewChild('verbModal', { static: false }) verbModal: ElementRef;
-  @ViewChild('phraseModal', { static: false }) phraseModal: ElementRef;
+  frenchNouns: IWords[] = FRENCHNOUNS;
 
-  nounOpen() {
-    this.nounModal.nativeElement.style.display = 'block';
+  @ViewChild('urduNounModal', { static: false }) urduNounModal: ElementRef;
+  @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ElementRef;
+  @ViewChild('urduPhraseModal', { static: false }) urduPhraseModal: ElementRef;
+  @ViewChild('frenchNounModal', { static: false }) frenchNounModal: ElementRef;
+
+  urduNounOpen() {
+    this.urduNounModal.nativeElement.style.display = 'block';
   }
 
-  verbOpen() {
-    this.verbModal.nativeElement.style.display = 'block';
+  urduVerbOpen() {
+    this.urduVerbModal.nativeElement.style.display = 'block';
   }
 
-  phraseOpen() {
-    this.phraseModal.nativeElement.style.display = 'block';
+  urduPhraseOpen() {
+    this.urduPhraseModal.nativeElement.style.display = 'block';
+  }
+
+  frenchNounOpen() {
+    this.frenchNounModal.nativeElement.style.display = 'block';
   }
 
   close() {
-    this.nounModal.nativeElement.style.display = 'none';
-    this.verbModal.nativeElement.style.display = 'none';
-    this.phraseModal.nativeElement.style.display = 'none';
+    this.urduNounModal.nativeElement.style.display = 'none';
+    this.urduVerbModal.nativeElement.style.display = 'none';
+    this.urduPhraseModal.nativeElement.style.display = 'none';
+    this.frenchNounModal.nativeElement.style.display = 'none';
   }
 }
