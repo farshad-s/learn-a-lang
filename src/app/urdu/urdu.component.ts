@@ -15,19 +15,20 @@ export class UrduComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  @ViewChild('nounModal', { static: false }) nounModal: ModalComponent;
-  @ViewChild('verbModal', { static: false }) verbModal: ModalComponent;
-  @ViewChild('phraseModal', { static: false }) phraseModal: ModalComponent;
+  @ViewChild('urduNounModal', { static: false }) urduNounModal: ModalComponent;
+  @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ModalComponent;
+  @ViewChild('urduPhraseModal', { static: false })
+  urduPhraseModal: ModalComponent;
 
   openNounModal() {
-    this.nounModal.nounOpen();
+    this.urduNounModal.urduNounOpen();
   }
 
   openVerbModal() {
-    this.verbModal.verbOpen();
+    this.urduVerbModal.urduVerbOpen();
   }
 
   openPhraseModal() {
-    this.phraseModal.phraseOpen();
+    this.urduPhraseModal.urduPhraseOpen();
   }
 }
