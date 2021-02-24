@@ -4,6 +4,7 @@ import { URDUNOUNS } from '../../urdu/urdu-nouns';
 import { URDUVERBS } from '../../urdu/urdu-verbs';
 import { URDUPHRASES } from '../../urdu/urdu-phrases';
 import { FRENCHNOUNS } from '../../french/french-nouns';
+import { FRENCHVERBS } from '../../french/french-verbs';
 import { FRENCHPHRASES } from '../../french/french-phrases';
 
 @Component({
@@ -17,12 +18,14 @@ export class ModalComponent {
   urduPhrases: IWords[] = URDUPHRASES;
 
   frenchNouns: IWords[] = FRENCHNOUNS;
+  frenchVerbs: IWords[] = FRENCHVERBS;
   frenchPhrases: IWords[] = FRENCHPHRASES;
 
   @ViewChild('urduNounModal', { static: false }) urduNounModal: ElementRef;
   @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ElementRef;
   @ViewChild('urduPhraseModal', { static: false }) urduPhraseModal: ElementRef;
   @ViewChild('frenchNounModal', { static: false }) frenchNounModal: ElementRef;
+  @ViewChild('frenchVerbModal', { static: false }) frenchVerbModal: ElementRef;
   @ViewChild('frenchPhraseModal', { static: false })
   frenchPhraseModal: ElementRef;
 
@@ -42,6 +45,10 @@ export class ModalComponent {
     this.frenchNounModal.nativeElement.style.display = 'block';
   }
 
+  frenchVerbOpen() {
+    this.frenchVerbModal.nativeElement.style.display = 'block';
+  }
+
   frenchPhraseOpen() {
     this.frenchPhraseModal.nativeElement.style.display = 'block';
   }
@@ -51,6 +58,7 @@ export class ModalComponent {
     this.urduVerbModal.nativeElement.style.display = 'none';
     this.urduPhraseModal.nativeElement.style.display = 'none';
     this.frenchNounModal.nativeElement.style.display = 'none';
+    this.frenchVerbModal.nativeElement.style.display = 'none';
     this.frenchPhraseModal.nativeElement.style.display = 'none';
   }
 }
