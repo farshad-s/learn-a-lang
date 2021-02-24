@@ -2,39 +2,39 @@ import { IWords } from '../shared/words';
 
 export const URDUNOUNS: IWords[] = [
   {
-    word: 'Kabootar',
-    translation: 'Pigeon',
+    word: 'Pigeon',
+    translation: 'Kabootar',
   },
   {
-    word: 'Sher',
-    translation: 'Lion',
+    word: 'Lion',
+    translation: 'Sher',
   },
   {
-    word: 'Babar',
-    translation: 'Tiger',
+    word: 'Tiger',
+    translation: 'Babar',
   },
   {
-    word: 'Billi',
-    translation: 'Cat',
+    word: 'Cat',
+    translation: 'Billi',
   },
   {
-    word: 'Gadha',
-    translation: 'Donkey',
+    word: 'Donkey',
+    translation: 'Gadha',
   },
   {
-    word: 'Maindak',
-    translation: 'Frog',
+    word: 'Frog',
+    translation: 'Maindak',
   },
   {
-    word: 'Zarafah',
-    translation: 'Giraffe',
+    word: 'Giraffe',
+    translation: 'Zarafah',
   },
   {
-    word: 'Tattu',
-    translation: 'Pony',
+    word: 'Pony',
+    translation: 'Tattu',
   },
   {
-    word: 'Khargosh',
-    translation: 'Rabbit',
+    word: 'Rabbit',
+    translation: 'Khargosh',
   },
 ];
