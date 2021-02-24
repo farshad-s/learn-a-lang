@@ -1,6 +1,6 @@
 import { IWords } from '../shared/words';
 
-export const NOUNS: IWords[] = [
+export const FRENCHNOUNS: IWords[] = [
   {
     word: 'Pigeon/Pigeonne',
     translation: 'Pigeon',
