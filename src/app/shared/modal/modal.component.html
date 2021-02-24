@@ -38,6 +38,16 @@
   </div>
 </div>
 
+<div #frenchVerbModal class="container">
+  <div class="content" *ngFor="let frenchVerb of frenchVerbs">
+    <p class="word">Word: {{ frenchVerb.word }}</p>
+    <p class="translation">Translation: {{ frenchVerb.translation }}</p>
+  </div>
+  <div class="button-container">
+    <button (click)="close()">Close</button>
+  </div>
+</div>
+
 <div #frenchPhraseModal class="container">
   <div class="content" *ngFor="let frenchPhrase of frenchPhrases">
     <p class="word">Word: {{ frenchPhrase.word }}</p>
