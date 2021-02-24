@@ -1,8 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ICategories } from '../shared/categories';
 import { CATEGORIES } from '../shared/categories-list';
-import { IWords } from '../shared/words';
-import { NOUNS } from './urdu-nouns';
 import { ModalComponent } from '../shared/modal/modal.component';
 
 @Component({
@@ -12,7 +10,6 @@ import { ModalComponent } from '../shared/modal/modal.component';
 })
 export class UrduComponent implements OnInit {
   categories: ICategories[] = CATEGORIES;
-  urduWords: IWords[] = NOUNS;
 
   constructor() {}
 
