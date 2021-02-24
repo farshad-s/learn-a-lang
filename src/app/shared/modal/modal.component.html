@@ -37,3 +37,13 @@
     <button (click)="close()">Close</button>
   </div>
 </div>
+
+<div #frenchPhraseModal class="container">
+  <div class="content" *ngFor="let frenchPhrase of frenchPhrases">
+    <p class="word">Word: {{ frenchPhrase.word }}</p>
+    <p class="translation">Translation: {{ frenchPhrase.translation }}</p>
+  </div>
+  <div class="button-container">
+    <button (click)="close()">Close</button>
+  </div>
+</div>
