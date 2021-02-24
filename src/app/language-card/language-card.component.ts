@@ -11,7 +11,9 @@ export class LanguageCardComponent implements OnInit {
   languageCards: ILanguage[] = LANGUAGECARDS;
 
   selectClicked(i): void {
-    console.log(this.languageCards[i].language);
+    this.languageCards[i].available === false
+      ? alert('This language is currently unavailable')
+      : '';
   }
 
   constructor() {}
