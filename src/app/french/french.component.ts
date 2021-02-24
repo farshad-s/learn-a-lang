@@ -15,9 +15,15 @@ export class FrenchComponent implements OnInit {
 
   @ViewChild('frenchNounModal', { static: false })
   frenchNounModal: ModalComponent;
+  @ViewChild('frenchPhraseModal', { static: false })
+  frenchPhraseModal: ModalComponent;
 
   openNounModal() {
     this.frenchNounModal.frenchNounOpen();
+  }
+
+  openPhraseModal() {
+    this.frenchPhraseModal.frenchPhraseOpen();
   }
 
   ngOnInit(): void {}
