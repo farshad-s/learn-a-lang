@@ -10,8 +10,8 @@ export const LANGUAGECARDS: ILanguage[] = [
   {
     language: 'French',
     greeting: 'Bonjour le monde',
-    button: 'Currently not available',
-    available: false,
+    button: 'Click here to get started!',
+    available: true,
   },
   {
     language: 'Spanish',
