@@ -3,14 +3,14 @@ import { IWords } from '../shared/words';
 export const FRENCHVERBS: IWords[] = [
   {
     word: 'I ate',
-    translation: '',
+    translation: "ja'i mangé",
   },
   {
     word: 'I went',
-    translation: '',
+    translation: 'je suis allé',
   },
   {
     word: 'I forgot',
-    translation: '',
+    translation: "j'ai oublié",
   },
 ];
