@@ -1,6 +1,6 @@
 import { IWords } from '../shared/words';
 
-export const VERBS: IWords[] = [
+export const URDUVERBS: IWords[] = [
   {
     word: 'I ate',
     translation: 'Meine Kaya',

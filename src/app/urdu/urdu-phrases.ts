@@ -1,6 +1,6 @@
 import { IWords } from '../shared/words';
 
-export const PHRASES: IWords[] = [
+export const URDUPHRASES: IWords[] = [
   {
     word: 'My name is ___',
     translation: 'Meri naam ___ hein',
