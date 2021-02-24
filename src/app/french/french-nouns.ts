@@ -2,39 +2,39 @@ import { IWords } from '../shared/words';
 
 export const FRENCHNOUNS: IWords[] = [
   {
-    word: 'Pigeon/Pigeonne',
-    translation: 'Pigeon',
+    word: 'Pigeon',
+    translation: 'Pigeon/Pigeonne',
   },
   {
-    word: 'Lion/Lionne',
-    translation: 'Lion',
+    word: 'Lion',
+    translation: 'Lion/Lionne',
   },
   {
-    word: 'Tigre/Tigresse',
-    translation: 'Tiger',
+    word: 'Tiger',
+    translation: 'Tigre/Tigresse',
   },
   {
-    word: 'Chat/Chatte',
-    translation: 'Cat',
+    word: 'Cat',
+    translation: 'Chat/Chatte',
   },
   {
-    word: 'Âne/Ânesse',
-    translation: 'Donkey',
+    word: 'Donkey',
+    translation: 'Âne/Ânesse',
   },
   {
-    word: 'La grenouille',
-    translation: 'Frog',
+    word: 'Frog',
+    translation: 'La grenouille',
   },
   {
-    word: 'Girafe',
-    translation: 'Giraffe',
+    word: 'Giraffe',
+    translation: 'Girafe',
   },
   {
-    word: 'Poney',
-    translation: 'Pony',
+    word: 'Pony',
+    translation: 'Poney',
   },
   {
-    word: 'Lapin/Lapine',
-    translation: 'Rabbit',
+    word: 'Rabbit',
+    translation: 'Lapin/Lapine',
   },
 ];
