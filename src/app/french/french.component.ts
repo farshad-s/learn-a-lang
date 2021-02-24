@@ -13,7 +13,12 @@ export class FrenchComponent implements OnInit {
 
   constructor() {}
 
-  @ViewChild('nounModal', { static: false }) nounModal: ModalComponent;
+  @ViewChild('frenchNounModal', { static: false })
+  frenchNounModal: ModalComponent;
+
+  openNounModal() {
+    this.frenchNounModal.frenchNounOpen();
+  }
 
   ngOnInit(): void {}
 }
