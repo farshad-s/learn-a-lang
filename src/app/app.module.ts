@@ -20,6 +20,7 @@ const routes: Routes = [
   },
   { path: 'home/Urdu', component: UrduComponent },
   { path: 'home/French', component: FrenchComponent },
+  { path: 'REPOSITORY', component: LanguageCardComponent },
 ];
 
 @NgModule({
