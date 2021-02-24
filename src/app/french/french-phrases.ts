@@ -3,14 +3,14 @@ import { IWords } from '../shared/words';
 export const FRENCHPHRASES: IWords[] = [
   {
     word: 'My name is ___',
-    translation: '',
+    translation: 'Mon nom est ___',
   },
   {
     word: 'What is your name?',
-    translation: '',
+    translation: 'Quel est ton nom?',
   },
   {
     word: 'How are you?',
-    translation: '',
+    translation: 'Comment vas-tu?',
   },
 ];
