@@ -6,6 +6,7 @@ import { URDUPHRASES } from '../../urdu/urdu-phrases';
 import { FRENCHNOUNS } from '../../french/french-nouns';
 import { FRENCHVERBS } from '../../french/french-verbs';
 import { FRENCHPHRASES } from '../../french/french-phrases';
+import { words } from '../../shared/words-test';
 
 @Component({
   selector: 'app-modal',
@@ -21,26 +22,7 @@ export class ModalComponent {
   frenchVerbs: IWords[] = FRENCHVERBS;
   frenchPhrases: IWords[] = FRENCHPHRASES;
 
-  tests = [
-    {
-      language: 'Urdu',
-      type: 'Noun',
-      word: 'hello',
-      translation: 'hey',
-    },
-    {
-      language: 'Urdu',
-      type: 'Noun',
-      word: 'help',
-      translation: 'me',
-    },
-    {
-      language: 'Urdu',
-      type: 'Verb',
-      word: 'I am eating',
-      translation: 'Meine Khaya',
-    },
-  ];
+  myVariable = words;
 
   @ViewChild('urduNounModal', { static: false }) urduNounModal: ElementRef;
   @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ElementRef;
