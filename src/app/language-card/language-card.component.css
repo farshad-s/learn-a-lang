@@ -8,6 +8,8 @@
 .container {
   display: flex;
   justify-content: center;
+  width: 60%;
+  margin: auto;
 }
 
 .card-container {
@@ -15,9 +17,76 @@
   height: 60vh;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
+  width: 50%;
 }
 
-mat-card {
-  width: 260px;
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 75px;
+  padding: 0px !important;
+}
+
+.mat-card:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mat-card:hover::before,
+.mat-card:hover::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  z-index: -1;
+}
+
+.mat-card:hover:after {
+  background: green;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
 }
