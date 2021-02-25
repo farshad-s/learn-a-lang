@@ -8,7 +8,7 @@
         <button *ngIf="i == 0" (click)="openTest()">
           Click here to learn some Animal names!
         </button>
-        <button *ngIf="i == 1" (click)="openVerbModal()">
+        <button *ngIf="i == 1" (click)="openTest()">
           Click here to learn different verbs!
         </button>
         <button *ngIf="i == 2" (click)="openPhraseModal()">
@@ -22,15 +22,4 @@
 <app-modal #urduNounModal></app-modal>
 <app-modal #urduVerbModal></app-modal>
 <app-modal #urduPhraseModal></app-modal>
-
-<div #testing class="container">
-  <div class="content" *ngFor="let test of tests; let i = index">
-    <div *ngIf="test.language == 'Urdu' && test.type == 'Noun'">
-      <p class="word">Word: {{ test.word }}</p>
-      <p class="translation">Translation: {{ test.translation }}</p>
-    </div>
-  </div>
-  <div class="button-container">
-    <button (click)="close()">Close</button>
-  </div>
-</div>
+<app-modal #testing2></app-modal>
