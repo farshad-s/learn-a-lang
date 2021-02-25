@@ -19,4 +19,10 @@ export const LANGUAGECARDS: ILanguage[] = [
     button: 'Currently not available',
     available: false,
   },
+  {
+    language: 'German',
+    greeting: 'Hallo Welt',
+    button: 'Currently not available',
+    available: false,
+  },
 ];
