@@ -21,11 +21,33 @@ export class ModalComponent {
   frenchVerbs: IWords[] = FRENCHVERBS;
   frenchPhrases: IWords[] = FRENCHPHRASES;
 
+  tests = [
+    {
+      language: 'Urdu',
+      type: 'Noun',
+      word: 'hello',
+      translation: 'hey',
+    },
+    {
+      language: 'Urdu',
+      type: 'Noun',
+      word: 'help',
+      translation: 'me',
+    },
+    {
+      language: 'Urdu',
+      type: 'Verb',
+      word: 'I am eating',
+      translation: 'Meine Khaya',
+    },
+  ];
+
   @ViewChild('urduNounModal', { static: false }) urduNounModal: ElementRef;
   @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ElementRef;
   @ViewChild('urduPhraseModal', { static: false }) urduPhraseModal: ElementRef;
   @ViewChild('frenchNounModal', { static: false }) frenchNounModal: ElementRef;
   @ViewChild('frenchVerbModal', { static: false }) frenchVerbModal: ElementRef;
+  @ViewChild('testing2', { static: false }) testing2: ElementRef;
   @ViewChild('frenchPhraseModal', { static: false })
   frenchPhraseModal: ElementRef;
 
@@ -60,5 +82,6 @@ export class ModalComponent {
     this.frenchNounModal.nativeElement.style.display = 'none';
     this.frenchVerbModal.nativeElement.style.display = 'none';
     this.frenchPhraseModal.nativeElement.style.display = 'none';
+    this.testing2.nativeElement.style.display = 'none';
   }
 }
