@@ -4,7 +4,7 @@
     <div *ngFor="let languageCard of languageCards; let i = index">
       <div>
         <mat-card
-          class="mat-card"
+          [ngClass]="languageCard.available ? 'mat-card-green' : 'mat-card-red'"
           routerLink="{{ languageCard.language }}"
           (click)="selectClicked(i)"
         >
