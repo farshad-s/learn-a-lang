@@ -5,7 +5,19 @@
   height: 100px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .card-container {
   display: flex;
-  justify-content: space-evenly;
+  height: 60vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+mat-card {
+  width: 260px;
 }
