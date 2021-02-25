@@ -5,10 +5,10 @@
       <mat-card>
         <mat-card-title>{{ category.category }}</mat-card-title>
         <mat-card-content>{{ category.description }}</mat-card-content>
-        <button *ngIf="i == 0" (click)="openTest()">
+        <button *ngIf="i == 0" (click)="openNounModal()">
           Click here to learn some Animal names!
         </button>
-        <button *ngIf="i == 1" (click)="openTest()">
+        <button *ngIf="i == 1" (click)="openVerbModal()">
           Click here to learn different verbs!
         </button>
         <button *ngIf="i == 2" (click)="openPhraseModal()">
@@ -22,4 +22,3 @@
 <app-modal #urduNounModal></app-modal>
 <app-modal #urduVerbModal></app-modal>
 <app-modal #urduPhraseModal></app-modal>
-<app-modal #testing2></app-modal>
