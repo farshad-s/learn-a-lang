@@ -57,3 +57,15 @@
     <button (click)="close()">Close</button>
   </div>
 </div>
+
+<div #testing2 class="container">
+  <div class="content" *ngFor="let test of tests; let i = index">
+    <div *ngIf="test.language == 'Urdu' && test.type == 'Noun'">
+      <p class="word">Word: {{ test.word }}</p>
+      <p class="translation">Translation: {{ test.translation }}</p>
+    </div>
+  </div>
+  <div class="button-container">
+    <button (click)="close()">Close</button>
+  </div>
+</div>
