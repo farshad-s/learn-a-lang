@@ -12,7 +12,7 @@ export class LanguageCardComponent implements OnInit {
 
   selectClicked(i): void {
     this.languageCards[i].available === false
-      ? alert('This language is currently unavailable')
+      ? alert(this.languageCards[i].language + ' is currently unavailable')
       : '';
   }
 
