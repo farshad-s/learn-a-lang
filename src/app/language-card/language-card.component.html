@@ -3,21 +3,13 @@
   <div class="card-container">
     <div *ngFor="let languageCard of languageCards; let i = index">
       <div>
-        <mat-card>
+        <mat-card
+          class="mat-card"
+          routerLink="{{ languageCard.language }}"
+          (click)="selectClicked(i)"
+        >
           <mat-card-title>{{ languageCard.language }}</mat-card-title>
           <mat-card-content>{{ languageCard.greeting }}</mat-card-content>
-          <button
-            routerLink="{{ languageCard.language }}"
-            (click)="selectClicked(i)"
-            [ngStyle]="{
-              'background-color':
-                languageCard.available === true
-                  ? 'rgb(65, 156, 65)'
-                  : 'rgb(192, 66, 66)'
-            }"
-          >
-            {{ languageCard.button }}
-          </button>
         </mat-card>
       </div>
     </div>
