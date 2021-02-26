@@ -18,6 +18,12 @@
   width: 30%;
 }
 
+.content:hover {
+  background-color: rgb(45, 243, 243);
+  transition: ease-in 0.5s;
+  cursor: pointer;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
