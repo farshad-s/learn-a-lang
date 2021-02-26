@@ -16,8 +16,3 @@ button {
   outline: none;
   cursor: pointer;
 }
-
-button:hover {
-  background-color: transparent !important;
-  transition: ease 0.5s;
-}
