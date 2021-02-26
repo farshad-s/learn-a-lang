@@ -53,3 +53,7 @@ mat-card {
   justify-content: center;
   padding: 20px 0px;
 }
+
+.mat-card {
+  cursor: pointer;
+}
