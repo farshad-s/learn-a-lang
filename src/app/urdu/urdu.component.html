@@ -2,15 +2,17 @@
 <div class="card-container">
   <div class="row">
     <div *ngFor="let category of categories; let i = index">
-      <mat-card (click)="openNounModal()">
+      <mat-card *ngIf="i == 0" (click)="openNounModal()">
         <mat-card-title>{{ category.category }}</mat-card-title>
         <mat-card-content>{{ category.description }}</mat-card-content>
-        <button *ngIf="i == 1" (click)="openVerbModal()">
-          Click here to learn different verbs!
-        </button>
-        <button *ngIf="i == 2" (click)="openPhraseModal()">
-          Click here to learn phrases you will commonly use!
-        </button>
+      </mat-card>
+      <mat-card *ngIf="i == 1" (click)="openVerbModal()">
+        <mat-card-title>{{ category.category }}</mat-card-title>
+        <mat-card-content>{{ category.description }}</mat-card-content>
+      </mat-card>
+      <mat-card *ngIf="i == 2" (click)="openPhraseModal()">
+        <mat-card-title>{{ category.category }}</mat-card-title>
+        <mat-card-content>{{ category.description }}</mat-card-content>
       </mat-card>
     </div>
   </div>
