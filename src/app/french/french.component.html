@@ -2,19 +2,34 @@
 <div class="card-container">
   <div class="row">
     <div *ngFor="let category of categories; let i = index">
-      <mat-card>
-        <mat-card-title>{{ category.category }}</mat-card-title>
-        <mat-card-content>{{ category.description }}</mat-card-content>
-        <button *ngIf="i == 0" (click)="openNounModal()">
-          Click here to learn some Animal names!
-        </button>
-        <button *ngIf="i == 1" (click)="openVerbModal()">
-          Click here to learn different verbs!
-        </button>
-        <button *ngIf="i == 2" (click)="openPhraseModal()">
-          Click here to learn phrases you will commonly use!
-        </button>
-      </mat-card>
+      <div class="mat-card" *ngIf="i == 0" (click)="openNounModal()">
+        <div class="card-image">
+          <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+        </div>
+        <div class="card-title">
+          <p>{{ category.category }}</p>
+        </div>
+      </div>
+      <div class="mat-card" *ngIf="i == 1" (click)="openVerbModal()">
+        <div class="card-image">
+          <img
+            src="https://i.pinimg.com/originals/a5/45/38/a54538be5aa14b5af9b6446aa5fd2f7a.jpg"
+          />
+        </div>
+        <div class="card-title">
+          <p>{{ category.category }}</p>
+        </div>
+      </div>
+      <div class="mat-card" *ngIf="i == 2" (click)="openPhraseModal()">
+        <div class="card-image">
+          <img
+            src="https://media.istockphoto.com/vectors/cartoon-winter-snowy-mountains-flat-landscape-with-pines-and-hills-vector-id1173793908?k=6&m=1173793908&s=170667a&w=0&h=o27CmT7ynWpQ4t55qzqDj_2y_8hx-9Bp3dum3o12Mas="
+          />
+        </div>
+        <div class="card-title">
+          <p>{{ category.category }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
