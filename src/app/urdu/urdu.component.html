@@ -2,12 +2,9 @@
 <div class="card-container">
   <div class="row">
     <div *ngFor="let category of categories; let i = index">
-      <mat-card>
+      <mat-card (click)="openNounModal()">
         <mat-card-title>{{ category.category }}</mat-card-title>
         <mat-card-content>{{ category.description }}</mat-card-content>
-        <button *ngIf="i == 0" (click)="openNounModal()">
-          Click here to learn some Animal names!
-        </button>
         <button *ngIf="i == 1" (click)="openVerbModal()">
           Click here to learn different verbs!
         </button>
