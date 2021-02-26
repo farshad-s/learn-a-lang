@@ -1,9 +1,7 @@
 <div #urduNounModal class="container">
-  <div class="content" *ngFor="let word of myVariable; let i = index">
-    <div *ngIf="word.language == 'Urdu' && word.type == 'Noun'">
-      <p class="word">Word: {{ word.word }}</p>
-      <p class="translation">Translation: {{ word.translation }}</p>
-    </div>
+  <div class="content" *ngFor="let urduNoun of urduNouns; let i = index">
+    <p class="word">Word: {{ urduNoun.word }}</p>
+    <p class="translation">Translation: {{ urduNoun.translation }}</p>
   </div>
   <div class="button-container">
     <button (click)="close()">Close</button>
