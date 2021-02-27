@@ -1,9 +1,15 @@
 <div #urduNounModal class="container">
-  <div class="content" *ngFor="let urduNoun of urduNouns; let i = index">
-    <p class="word">Word: {{ urduNoun.word }}</p>
-    <p class="translation">Translation: {{ urduNoun.translation }}</p>
+  <div class="container-two">
+    <div class="front flip" *ngFor="let urduNoun of urduNouns; let i = index">
+      <div class="front">
+        <p class="word">{{ urduNoun.word }}</p>
+      </div>
+      <div class="back">
+        <p class="translation">{{ urduNoun.translation }}</p>
+      </div>
+    </div>
   </div>
-  <div class="button-container">
+  <div class="back button-container">
     <button (click)="close()">Close</button>
   </div>
 </div>
