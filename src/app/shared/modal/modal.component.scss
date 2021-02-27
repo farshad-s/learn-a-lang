@@ -11,12 +11,11 @@
 }
 
 .container-two {
-  width: 10%;
+  width: 12%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
-  background-color: red;
 }
 
 .content {
@@ -26,12 +25,6 @@
   border: 1px solid #888;
   width: 30%;
 }
-
-// .content:hover {
-//   background-color: rgb(45, 243, 243);
-//   transition: ease-in 0.5s;
-//   cursor: pointer;
-// }
 
 .button-container {
   display: flex;
@@ -56,9 +49,6 @@
     position: absolute;
     opacity: 0;
     top: 0px;
-    left: 0px;
-    width: 50%;
-    height: 50%;
     transform: rotateY(-180deg);
   }
   &:hover {
@@ -88,23 +78,22 @@
 // custom
 .flip {
   position: relative;
-  margin-bottom: 1em;
   > .front,
   > .back {
     display: block;
     color: white;
-    width: inherit;
     background-size: cover !important;
     background-position: center !important;
-    height: 80px;
-    padding: 20px;
+    height: 100px;
+    width: 100px;
+    padding: 1em 2em;
     background: rgb(81, 94, 97);
     border-radius: 10px;
-    width: 50%;
-    p {
-      font-size: 0.9125rem;
-      line-height: 160%;
-      color: #999;
-    }
+    margin-bottom: 10px;
   }
+}
+
+p {
+  display: flex;
+  justify-content: center;
 }
