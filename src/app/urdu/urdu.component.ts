@@ -6,7 +6,7 @@ import { ModalComponent } from '../shared/modal/modal.component';
 @Component({
   selector: 'app-urdu',
   templateUrl: './urdu.component.html',
-  styleUrls: ['./urdu.component.css'],
+  styleUrls: ['./urdu.component.scss'],
 })
 export class UrduComponent implements OnInit {
   categories: ICategories[] = CATEGORIES;
