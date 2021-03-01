@@ -6,6 +6,7 @@ import { URDUPHRASES } from '../../urdu/urdu-phrases';
 import { FRENCHNOUNS } from '../../french/french-nouns';
 import { FRENCHVERBS } from '../../french/french-verbs';
 import { FRENCHPHRASES } from '../../french/french-phrases';
+import { AnonymousSubject } from 'rxjs/internal/Subject';
 
 @Component({
   selector: 'app-modal',
@@ -20,6 +21,12 @@ export class ModalComponent {
   frenchNouns: IWords[] = FRENCHNOUNS;
   frenchVerbs: IWords[] = FRENCHVERBS;
   frenchPhrases: IWords[] = FRENCHPHRASES;
+
+  private element: any;
+
+  constructor(private el: ElementRef) {
+    this.element = el.nativeElement;
+  }
 
   @ViewChild('urduNounModal', { static: false }) urduNounModal: ElementRef;
   @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ElementRef;
@@ -62,5 +69,13 @@ export class ModalComponent {
     this.frenchVerbModal.nativeElement.style.display = 'none';
     this.frenchPhraseModal.nativeElement.style.display = 'none';
     this.testing2.nativeElement.style.display = 'none';
+  }
+
+  ngOnInit(): void {
+    this.element.addEventListener('click', (el) => {
+      if (el.target.className === 'container') {
+        this.close();
+      }
+    });
   }
 }
