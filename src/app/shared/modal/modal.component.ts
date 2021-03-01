@@ -24,7 +24,7 @@ export class ModalComponent {
 
   private element: any;
 
-  constructor(private el: ElementRef) {
+  constructor(el: ElementRef) {
     this.element = el.nativeElement;
   }
 
@@ -68,7 +68,6 @@ export class ModalComponent {
     this.frenchNounModal.nativeElement.style.display = 'none';
     this.frenchVerbModal.nativeElement.style.display = 'none';
     this.frenchPhraseModal.nativeElement.style.display = 'none';
-    this.testing2.nativeElement.style.display = 'none';
   }
 
   ngOnInit(): void {
