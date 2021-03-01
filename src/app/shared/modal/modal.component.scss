@@ -1,21 +1,27 @@
+p {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: none;
   position: absolute;
-  padding-top: 6%;
   left: 0;
   top: 0;
   width: 100%;
-  height: 89%;
+  height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .container-two {
-  width: 12%;
+  width: 25%;
   margin: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
+  margin-top: 6%;
 }
 
 .content {
@@ -41,6 +47,7 @@
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: 0.5s;
     transition-property: transform, opacity;
+    margin: 10px;
   }
   > .front {
     transform: rotateY(0deg);
@@ -91,9 +98,4 @@
     border-radius: 10px;
     margin-bottom: 10px;
   }
-}
-
-p {
-  display: flex;
-  justify-content: center;
 }
