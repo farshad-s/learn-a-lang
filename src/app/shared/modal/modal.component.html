@@ -50,31 +50,58 @@
 </div>
 
 <div #frenchNounModal class="container">
-  <div class="content" *ngFor="let frenchNoun of frenchNouns">
-    <p class="word">Word: {{ frenchNoun.word }}</p>
-    <p class="translation">Translation: {{ frenchNoun.translation }}</p>
+  <div class="container-two">
+    <div
+      class="front flip"
+      *ngFor="let frenchNoun of frenchNouns; let i = index"
+    >
+      <div class="front">
+        <p class="word">{{ frenchNoun.word }}</p>
+      </div>
+      <div class="back">
+        <p class="translation">{{ frenchNoun.translation }}</p>
+      </div>
+    </div>
   </div>
-  <div class="button-container">
+  <div class="back button-container">
     <button (click)="close()">Close</button>
   </div>
 </div>
 
 <div #frenchVerbModal class="container">
-  <div class="content" *ngFor="let frenchVerb of frenchVerbs">
-    <p class="word">Word: {{ frenchVerb.word }}</p>
-    <p class="translation">Translation: {{ frenchVerb.translation }}</p>
+  <div class="container-two">
+    <div
+      class="front flip"
+      *ngFor="let frenchVerb of frenchVerbs; let i = index"
+    >
+      <div class="front">
+        <p class="word">{{ frenchVerb.word }}</p>
+      </div>
+      <div class="back">
+        <p class="translation">{{ frenchVerb.translation }}</p>
+      </div>
+    </div>
   </div>
-  <div class="button-container">
+  <div class="back button-container">
     <button (click)="close()">Close</button>
   </div>
 </div>
 
 <div #frenchPhraseModal class="container">
-  <div class="content" *ngFor="let frenchPhrase of frenchPhrases">
-    <p class="word">Word: {{ frenchPhrase.word }}</p>
-    <p class="translation">Translation: {{ frenchPhrase.translation }}</p>
+  <div class="container-two">
+    <div
+      class="front flip"
+      *ngFor="let frenchPhrase of frenchPhrases; let i = index"
+    >
+      <div class="front">
+        <p class="word">{{ frenchPhrase.word }}</p>
+      </div>
+      <div class="back">
+        <p class="translation">{{ frenchPhrase.translation }}</p>
+      </div>
+    </div>
   </div>
-  <div class="button-container">
+  <div class="back button-container">
     <button (click)="close()">Close</button>
   </div>
 </div>
