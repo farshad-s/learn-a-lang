@@ -15,21 +15,36 @@
 </div>
 
 <div #urduVerbModal class="container">
-  <div class="content" *ngFor="let urduVerb of urduVerbs">
-    <p class="word">Word: {{ urduVerb.word }}</p>
-    <p class="translation">Translation: {{ urduVerb.translation }}</p>
+  <div class="container-two">
+    <div class="front flip" *ngFor="let urduVerb of urduVerbs; let i = index">
+      <div class="front">
+        <p class="word">{{ urduVerb.word }}</p>
+      </div>
+      <div class="back">
+        <p class="translation">{{ urduVerb.translation }}</p>
+      </div>
+    </div>
   </div>
-  <div class="button-container">
+  <div class="back button-container">
     <button (click)="close()">Close</button>
   </div>
 </div>
 
 <div #urduPhraseModal class="container">
-  <div class="content" *ngFor="let urduPhrase of urduPhrases">
-    <p class="word">Phrase: {{ urduPhrase.word }}</p>
-    <p class="translation">Translation: {{ urduPhrase.translation }}</p>
+  <div class="container-two">
+    <div
+      class="front flip"
+      *ngFor="let urduPhrase of urduPhrases; let i = index"
+    >
+      <div class="front">
+        <p class="word">{{ urduPhrase.word }}</p>
+      </div>
+      <div class="back">
+        <p class="translation">{{ urduPhrase.translation }}</p>
+      </div>
+    </div>
   </div>
-  <div class="button-container">
+  <div class="back button-container">
     <button (click)="close()">Close</button>
   </div>
 </div>
