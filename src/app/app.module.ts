@@ -10,6 +10,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { UrduComponent } from './urdu/urdu.component';
 import { ModalComponent } from './shared/modal/modal.component';
 import { FrenchComponent } from './french/french.component';
+import { UrduNounsComponent } from './urdu-nouns/urdu-nouns.component';
 
 const routes: Routes = [
   { path: 'home', component: LanguageCardComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { path: 'home/Urdu', component: UrduComponent },
+  { path: 'home/Urdu/Nouns', component: UrduNounsComponent },
   { path: 'home/French', component: FrenchComponent },
   { path: 'REPOSITORY', component: LanguageCardComponent },
 ];
@@ -31,6 +33,7 @@ const routes: Routes = [
     UrduComponent,
     ModalComponent,
     FrenchComponent,
+    UrduNounsComponent,
   ],
   imports: [
     BrowserModule,
