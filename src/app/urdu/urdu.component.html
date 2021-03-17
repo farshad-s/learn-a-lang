@@ -2,7 +2,7 @@
 <div class="card-container">
   <div class="row">
     <div *ngFor="let category of categories; let i = index">
-      <div class="mat-card" *ngIf="i == 0" (click)="openNounModal()">
+      <div class="mat-card" *ngIf="i == 0" routerLink="Nouns">
         <div class="card-image">
           <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
         </div>
