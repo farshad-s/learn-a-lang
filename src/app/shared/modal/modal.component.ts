@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IWords } from '../../shared/words';
-import { URDUNOUNS } from '../../urdu/urdu-nouns';
+import { URDUANIMALS } from '../../urdu-nouns/urdu-animals';
 import { URDUVERBS } from '../../urdu/urdu-verbs';
 import { URDUPHRASES } from '../../urdu/urdu-phrases';
 import { FRENCHNOUNS } from '../../french/french-nouns';
@@ -14,7 +14,7 @@ import { AnonymousSubject } from 'rxjs/internal/Subject';
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent {
-  urduNouns: IWords[] = URDUNOUNS;
+  urduAnimals: IWords[] = URDUANIMALS;
   urduVerbs: IWords[] = URDUVERBS;
   urduPhrases: IWords[] = URDUPHRASES;
 
@@ -30,6 +30,8 @@ export class ModalComponent {
 
   @ViewChild('urduAnimalsModal', { static: false })
   urduAnimalsModal: ElementRef;
+  @ViewChild('urduFruitModal', { static: false })
+  urduFruitModal: ElementRef;
   @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ElementRef;
   @ViewChild('urduPhraseModal', { static: false }) urduPhraseModal: ElementRef;
   @ViewChild('frenchNounModal', { static: false }) frenchNounModal: ElementRef;
@@ -37,8 +39,12 @@ export class ModalComponent {
   @ViewChild('frenchPhraseModal', { static: false })
   frenchPhraseModal: ElementRef;
 
-  urduNounOpen() {
+  urduAnimalOpen() {
     this.urduAnimalsModal.nativeElement.style.display = 'block';
+  }
+
+  urduFruitOpen() {
+    this.urduFruitModal.nativeElement.style.display = 'block';
   }
 
   urduVerbOpen() {
@@ -63,6 +69,7 @@ export class ModalComponent {
 
   close() {
     this.urduAnimalsModal.nativeElement.style.display = 'none';
+    this.urduFruitModal.nativeElement.style.display = 'none';
     this.urduVerbModal.nativeElement.style.display = 'none';
     this.urduPhraseModal.nativeElement.style.display = 'none';
     this.frenchNounModal.nativeElement.style.display = 'none';
