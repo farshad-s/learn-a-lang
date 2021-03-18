@@ -11,6 +11,28 @@
         </div>
       </div>
 
+      <div class="mat-card" *ngIf="i == 1" (click)="openVerbModal()">
+        <div class="card-image">
+          <img
+            src="https://i.pinimg.com/originals/a5/45/38/a54538be5aa14b5af9b6446aa5fd2f7a.jpg"
+          />
+        </div>
+        <div class="card-title">
+          <p>{{ type.category }}</p>
+        </div>
+      </div>
+
+      <div class="mat-card" *ngIf="i == 2" (click)="openVerbModal()">
+        <div class="card-image">
+          <img
+            src="https://media.istockphoto.com/vectors/cartoon-winter-snowy-mountains-flat-landscape-with-pines-and-hills-vector-id1173793908?k=6&m=1173793908&s=170667a&w=0&h=o27CmT7ynWpQ4t55qzqDj_2y_8hx-9Bp3dum3o12Mas="
+          />
+        </div>
+        <div class="card-title">
+          <p>{{ type.category }}</p>
+        </div>
+      </div>
+
       <app-modal #urduNounModal></app-modal>
     </div>
   </div>
