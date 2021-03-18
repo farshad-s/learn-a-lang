@@ -22,7 +22,7 @@ export class UrduComponent implements OnInit {
   @ViewChild('testing2', { static: false }) testing2: ModalComponent;
 
   openNounModal() {
-    this.urduNounModal.urduNounOpen();
+    this.urduNounModal.urduAnimalOpen();
   }
 
   openVerbModal() {
