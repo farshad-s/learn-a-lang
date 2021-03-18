@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IWords } from '../../shared/words';
 import { URDUANIMALS } from '../../urdu-nouns/urdu-animals';
+import { URDUFRUITS } from '../../urdu-nouns/urdu-fruits';
 import { URDUVERBS } from '../../urdu/urdu-verbs';
 import { URDUPHRASES } from '../../urdu/urdu-phrases';
 import { FRENCHNOUNS } from '../../french/french-nouns';
@@ -15,6 +16,8 @@ import { AnonymousSubject } from 'rxjs/internal/Subject';
 })
 export class ModalComponent {
   urduAnimals: IWords[] = URDUANIMALS;
+  urduFruits: IWords[] = URDUFRUITS;
+
   urduVerbs: IWords[] = URDUVERBS;
   urduPhrases: IWords[] = URDUPHRASES;
 

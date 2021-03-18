@@ -19,12 +19,12 @@
 
 <div #urduFruitModal class="container">
   <div class="container-two">
-    <div class="front flip" *ngFor="let urduVerb of urduVerbs; let i = index">
+    <div class="front flip" *ngFor="let urduFruit of urduFruits; let i = index">
       <div class="front">
-        <p class="word">{{ urduVerb.word }}</p>
+        <p class="word">{{ urduFruit.word }}</p>
       </div>
       <div class="back">
-        <p class="translation">{{ urduVerb.translation }}</p>
+        <p class="translation">{{ urduFruit.translation }}</p>
       </div>
     </div>
   </div>
