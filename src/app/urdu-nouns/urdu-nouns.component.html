@@ -1,7 +1,7 @@
 <h1 class="title">Pick a Card</h1>
 <div class="card-container">
   <div class="row">
-    <div *ngFor="let type of types; let i = index">
+    <div *ngFor="let type of types; let i = index" (click)="openNounModal()">
       <div class="mat-card" *ngIf="i == 0" routerLink="Nouns">
         <div class="card-image">
           <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
@@ -32,8 +32,8 @@
           <p>{{ type.category }}</p>
         </div>
       </div>
-
-      <app-modal #urduNounModal></app-modal>
     </div>
   </div>
 </div>
+
+<app-modal #urduNounModal></app-modal>
