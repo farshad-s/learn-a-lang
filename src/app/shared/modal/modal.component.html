@@ -1,11 +1,14 @@
 <div #urduAnimalsModal class="container">
   <div class="container-two">
-    <div class="front flip" *ngFor="let urduNoun of urduNouns; let i = index">
+    <div
+      class="front flip"
+      *ngFor="let urduAnimal of urduAnimals; let i = index"
+    >
       <div class="front">
-        <p class="word">{{ urduNoun.word }}</p>
+        <p class="word">{{ urduAnimal.word }}</p>
       </div>
       <div class="back">
-        <p class="translation">{{ urduNoun.translation }}</p>
+        <p class="translation">{{ urduAnimal.translation }}</p>
       </div>
     </div>
   </div>
@@ -14,7 +17,7 @@
   </div>
 </div>
 
-<div #urduVerbModal class="container">
+<div #urduFruitModal class="container">
   <div class="container-two">
     <div class="front flip" *ngFor="let urduVerb of urduVerbs; let i = index">
       <div class="front">
