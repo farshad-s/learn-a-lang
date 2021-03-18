@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ITypes } from '../shared/types';
 import { TYPES } from '../shared/types-list';
 import { ModalComponent } from '../shared/modal/modal.component';
