@@ -15,9 +15,10 @@ export class UrduNounsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  @ViewChild('urduNounModal', { static: false }) urduNounModal: ModalComponent;
+  @ViewChild('urduAnimalsModal', { static: false })
+  urduAnimalsModal: ModalComponent;
 
   openNounModal() {
-    this.urduNounModal.urduNounOpen();
+    this.urduAnimalsModal.urduNounOpen();
   }
 }

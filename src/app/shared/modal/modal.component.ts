@@ -28,7 +28,8 @@ export class ModalComponent {
     this.element = el.nativeElement;
   }
 
-  @ViewChild('urduNounModal', { static: false }) urduNounModal: ElementRef;
+  @ViewChild('urduAnimalsModal', { static: false })
+  urduAnimalsModal: ElementRef;
   @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ElementRef;
   @ViewChild('urduPhraseModal', { static: false }) urduPhraseModal: ElementRef;
   @ViewChild('frenchNounModal', { static: false }) frenchNounModal: ElementRef;
@@ -37,7 +38,7 @@ export class ModalComponent {
   frenchPhraseModal: ElementRef;
 
   urduNounOpen() {
-    this.urduNounModal.nativeElement.style.display = 'block';
+    this.urduAnimalsModal.nativeElement.style.display = 'block';
   }
 
   urduVerbOpen() {
@@ -61,7 +62,7 @@ export class ModalComponent {
   }
 
   close() {
-    this.urduNounModal.nativeElement.style.display = 'none';
+    this.urduAnimalsModal.nativeElement.style.display = 'none';
     this.urduVerbModal.nativeElement.style.display = 'none';
     this.urduPhraseModal.nativeElement.style.display = 'none';
     this.frenchNounModal.nativeElement.style.display = 'none';
