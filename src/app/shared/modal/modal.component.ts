@@ -33,7 +33,6 @@ export class ModalComponent {
   @ViewChild('urduPhraseModal', { static: false }) urduPhraseModal: ElementRef;
   @ViewChild('frenchNounModal', { static: false }) frenchNounModal: ElementRef;
   @ViewChild('frenchVerbModal', { static: false }) frenchVerbModal: ElementRef;
-  @ViewChild('testing2', { static: false }) testing2: ElementRef;
   @ViewChild('frenchPhraseModal', { static: false })
   frenchPhraseModal: ElementRef;
 
