@@ -3,38 +3,38 @@ import { IWords } from '../shared/words';
 export const URDUFRUITS: IWords[] = [
   {
     word: 'Apple',
-    translation: '',
+    translation: 'Seeb',
   },
   {
     word: 'Banana',
-    translation: '',
+    translation: 'Kila',
   },
   {
     word: 'Orange',
-    translation: '',
+    translation: 'Kenu',
   },
   {
     word: 'Strawberry',
-    translation: '',
+    translation: 'Istrawberry',
   },
   {
     word: 'Melon',
-    translation: '',
+    translation: 'Karbooza',
   },
   {
     word: 'Grape',
-    translation: '',
+    translation: 'Angoor',
   },
   {
     word: 'Pomegranate',
-    translation: '',
+    translation: 'Anaar',
   },
   {
     word: 'Watermelon',
-    translation: '',
+    translation: 'Tarbooz',
   },
   {
     word: 'Pineapple',
-    translation: '',
+    translation: 'Ananaas',
   },
 ];
