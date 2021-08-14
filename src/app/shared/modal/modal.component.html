@@ -33,6 +33,25 @@
   </div>
 </div>
 
+<div #urduVehicleModal class="container">
+  <div class="container-two">
+    <div
+      class="front flip"
+      *ngFor="let urduVehicle of urduVehicles; let i = index"
+    >
+      <div class="front">
+        <p class="word">{{ urduVehicle.word }}</p>
+      </div>
+      <div class="back">
+        <p class="translation">{{ urduVehicle.translation }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="back button-container">
+    <button (click)="close()">Close</button>
+  </div>
+</div>
+
 <div #urduPhraseModal class="container">
   <div class="container-two">
     <div
