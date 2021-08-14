@@ -19,6 +19,8 @@ export class UrduNounsComponent implements OnInit {
   urduAnimalsModal: ModalComponent;
   @ViewChild('urduFruitModal', { static: false })
   urduFruitModal: ModalComponent;
+  @ViewChild('urduVehicleModal', { static: false })
+  urduVehicleModal: ModalComponent;
 
   openAnimalModal() {
     this.urduAnimalsModal.urduAnimalOpen();
@@ -26,5 +28,9 @@ export class UrduNounsComponent implements OnInit {
 
   openFruitModal() {
     this.urduFruitModal.urduFruitOpen();
+  }
+
+  openVehicleModal() {
+    this.urduVehicleModal.urduVehicleOpen();
   }
 }
