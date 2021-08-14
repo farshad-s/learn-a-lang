@@ -31,6 +31,6 @@ export const URDUVEHICLES: IWords[] = [
   },
   {
     word: 'Train',
-    translation: 'Train',
+    translation: 'Rail Gaari',
   },
 ];
