@@ -3,34 +3,34 @@ import { IWords } from '../shared/words';
 export const URDUVEHICLES: IWords[] = [
   {
     word: 'Car',
-    translation: '',
+    translation: 'Gaari',
   },
   {
     word: 'Motorcycle',
-    translation: '',
+    translation: 'Motor Cycle',
   },
   {
     word: 'Van',
-    translation: '',
+    translation: 'Gaari',
   },
   {
     word: 'Bicycle',
-    translation: '',
+    translation: 'Cycle',
   },
   {
     word: 'Plane',
-    translation: '',
+    translation: 'Havay Jihaz',
   },
   {
     word: 'Boat',
-    translation: '',
+    translation: 'Keshti',
   },
   {
     word: 'Ship',
-    translation: '',
+    translation: 'Jihaz',
   },
   {
     word: 'Train',
-    translation: '',
+    translation: 'Train',
   },
 ];
