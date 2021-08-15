@@ -3,7 +3,7 @@
     <button routerLink="/home">Home</button>
   </div>
   <h1 class="header">{{ pageTitle }}</h1>
-  <div class="button-holder" [ngClass]="{ hide__default: !homepage }">
+  <div class="button-holder" [ngClass]="{ hide__default: homepage }">
     <button routerLink="/">Back</button>
   </div>
 </div>
