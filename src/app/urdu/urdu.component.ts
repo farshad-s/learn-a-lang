@@ -19,7 +19,6 @@ export class UrduComponent implements OnInit {
   @ViewChild('urduVerbModal', { static: false }) urduVerbModal: ModalComponent;
   @ViewChild('urduPhraseModal', { static: false })
   urduPhraseModal: ModalComponent;
-  @ViewChild('testing2', { static: false }) testing2: ModalComponent;
 
   openNounModal() {
     this.urduNounModal.urduAnimalOpen();
