@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   pageTitle: string = 'Learn a Language';
+  homepage: boolean = false;
 
   constructor() {}
 
