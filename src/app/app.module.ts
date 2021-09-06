@@ -11,6 +11,7 @@ import { UrduComponent } from './urdu/urdu.component';
 import { ModalComponent } from './shared/modal/modal.component';
 import { FrenchComponent } from './french/french.component';
 import { UrduNounsComponent } from './urdu-nouns/urdu-nouns.component';
+import { UrduVerbsComponent } from './urdu-verbs/urdu-verbs.component';
 
 const routes: Routes = [
   { path: 'home', component: LanguageCardComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   },
   { path: 'home/Urdu', component: UrduComponent },
   { path: 'home/Urdu/Nouns', component: UrduNounsComponent },
+  { path: 'home/Urdu/Verbs', component: UrduVerbsComponent },
   { path: 'home/French', component: FrenchComponent },
   { path: 'REPOSITORY', component: LanguageCardComponent },
 ];
@@ -34,6 +36,7 @@ const routes: Routes = [
     ModalComponent,
     FrenchComponent,
     UrduNounsComponent,
+    UrduVerbsComponent,
   ],
   imports: [
     BrowserModule,
